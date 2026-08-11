@@ -2,9 +2,33 @@
 <html lang="ko">
 <head>
   <meta charset='utf-8'>
+  <meta name='color-scheme' content='light dark'>
   <meta name='viewport' content='width=device-width'>
   <title>개인정보처리방침 — InOut Stock</title>
-  <style> body { font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif; padding:1em; max-width: 46em; margin: 0 auto; line-height: 1.7; } </style>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+      line-height: 1.7;
+      max-width: 46em;
+      margin: 0 auto;
+      padding: 1em;
+      background: #ffffff;
+      color: #1a1d23;
+    }
+    a { color: #0b63ce; }
+    hr { border: none; border-top: 1px solid #d9dee6; }
+    /* 기기가 다크모드면 앱 색상(AppColors)에 맞춘 팔레트로 전환한다.
+       앱 자체는 현재 다크 전용이지만, v2에서 라이트 테마가 생겨도
+       이 방식은 그대로 유효하다. */
+    @media (prefers-color-scheme: dark) {
+      body { background: #0E1116; color: #E6E9EF; }
+      a { color: #6AA8FF; }
+      strong { color: #F2F5FA; }
+      hr { border-top-color: #2A313C; }
+      p[style] { color: #8A94A6 !important; }
+    }
+  </style>
 </head>
 <body>
 
